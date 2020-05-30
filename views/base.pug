@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    title #{title}
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js")
+  body
+    nav.navbar.navbar-expand-md.bg-dark.navbar-dark.fixed-top
+      a.navbar-brand(href="#")
+        img(src="#" alt="logo" style="width:40px;")
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#collapsibleNavbar")
+        span.navbar-toggler-icon
+      #collapsibleNavbar.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href="/sports") SPORTS⚽
+          li.nav-item
+            a.nav-link(href="/entertainment") ENTERTAINMENT🎬
+          li.nav-item
+            a.nav-link(href="/business") BUSINESS💲
+          li.nav-item
+            a.nav-link(href="/science") SCIENCE🔬  
+          li.nav-item
+            a.nav-link(href="/tech") TECHNOLOGY💻    
+          li.nav-item
+            a.nav-link(href="/health") HEALTH🩺 
+    br
+    br
+    br
+    block content
+        h1 amit shahwal

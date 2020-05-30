@@ -1,0 +1,29 @@
+extends base
+block content
+    .container
+      .card-columns
+        for news in newss
+          .card.bg-light
+            .card-body.text-center
+              p.card-text(style="text-align:center;")
+                strong
+                  |#{news.title}
+                hr
+              p.card-text(style="text-align:left;")
+                strong
+                  | DESCRIPTION:-
+                |#{news.description}
+                br
+              p.card-text(style="text-align:left;")
+                strong
+                  | CONTENT:-
+                |#{news.content}
+                hr
+              p.card-text(style="text-align:center;")
+                |PUBLISHED AT:- 
+                mark
+                  |#{news.publishedAt}
+                br
+                br
+                a.btn.btn-info(type="button" target="_blank" href=`${news.url}`) FULL_NEWS
+                
