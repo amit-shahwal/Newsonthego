@@ -20,7 +20,7 @@ app.set("views", `${__dirname}/views`);
 app.use("/", viewRoute);
 
 app.use(express.json());
-
+app.use(express.static(`${__dirname}/public`));
 app.use(compression());
 app.get('/api',newsController.IndianNews)
 app.get("/api/UsaNews",newsController.UsaNews);
