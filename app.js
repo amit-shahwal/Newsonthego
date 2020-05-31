@@ -2,6 +2,7 @@ const express = require("express");
 const viewRoute = require("./viewRoute");
 const dotenv = require("dotenv");
 const compression= require('compression');
+
 const cors = require('cors');
 
 
@@ -28,9 +29,10 @@ app.get('/api/business',IndianNewsController.business)
 app.get('/api/entertainment',IndianNewsController.entertainment)
 app.get('/api/science',IndianNewsController.science)
 app.get('/api/sports',IndianNewsController.sports)
+app.post('/api/newsquery',newsController.newsquery)
 
 
 
 app.listen(port, () => {
-  console.log(`App running on port ${port}...`);
+ /// console.log(`App running on port ${port}...`);
 });

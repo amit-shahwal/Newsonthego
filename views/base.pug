@@ -10,7 +10,7 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js")
   body
-    nav.navbar.navbar-expand-md.bg-dark.navbar-dark.fixed-top
+    nav.navbar.navbar-expand-lg.bg-dark.navbar-dark.fixed-top
       a.navbar-brand(href="/")
         img(src="logo.png" alt="logo" style="width:40px;")
       button.navbar-toggler(type="button" data-toggle="collapse" data-target="#collapsibleNavbar")
@@ -28,9 +28,22 @@ html(lang="en")
           li.nav-item
             a.nav-link(href="/tech") TECHNOLOGY💻    
           li.nav-item
-            a.nav-link(href="/health") HEALTH🩺 
+            a.nav-link(href="/health") HEALTH👨‍⚕️ 
+      //- center
+        input.form-control.mr-sm-2(type="text" placeholder="Search")
+        
+     
+      ul.nav.navbar-nav.navbar-right
+        center
+          input.form-control.mr-sm-2(type="text" placeholder="Search")
+        button.btn.btn-info(type="submit") Search
+
+
+
     br
     br
     br
     block content
         h1 amit shahwal
+    script(src='/js/search.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js')

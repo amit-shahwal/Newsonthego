@@ -13,7 +13,7 @@ exports.landing = async (req, res) => {
       newss: data2.articles,
     });
   } catch (err) {
-    console.log(err);
+   // console.log(err);
   }
 };
 exports.business = async (req, res) => {
@@ -27,7 +27,7 @@ exports.business = async (req, res) => {
       newss: data2.articles,
     });
   } catch (err) {
-    console.log(err);
+   // console.log(err);
   }
 };
 
@@ -42,7 +42,7 @@ exports.entertainment = async (req, res) => {
       newss: data2.articles,
     });
   } catch (err) {
-    console.log(err);
+    //console.log(err);
   }
 };
 
@@ -57,7 +57,7 @@ exports.sports = async (req, res) => {
       newss: data2.articles,
     });
   } catch (err) {
-    console.log(err);
+    //console.log(err);
   }
 };
 
@@ -72,7 +72,7 @@ exports.science = async (req, res) => {
       newss: data2.articles,
     });
   } catch (err) {
-    console.log(err);
+    //console.log(err);
   }
 };
 exports.tech = async (req, res) => {
@@ -86,7 +86,7 @@ exports.tech = async (req, res) => {
       newss: data2.articles,
     });
   } catch (err) {
-    console.log(err);
+    //console.log(err);
   }
 };
 
@@ -101,6 +101,16 @@ exports.health = async (req, res) => {
       newss: data2.articles,
     });
   } catch (err) {
-    console.log(err);
+    //console.log(err);
   }
 };
+exports.newsquery = async (req, res) => {
+    try {
+         res.status(200).render("newsquery", {
+        title: "search",
+      
+      });
+    } catch (err) {
+     // console.log(err);
+    }
+  };
